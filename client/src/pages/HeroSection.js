@@ -10,7 +10,7 @@ function HeroSection() {
   return (
     <div className='hero-container'>
       <img src={image} alt='hero' />
-      <h1>READ.BUY.READ</h1>
+      <h1>READ.BUY.REPEAT.</h1>
       <p>What are you waiting for ?</p>
       <div className='hero-btns'>
         <Button
