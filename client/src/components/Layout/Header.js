@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
-import { GiShoppingBag } from "react-icons/gi";
+// import { GiShoppingBag } from "react-icons/gi";
 
 const Header = () => {
   return (
@@ -28,11 +28,11 @@ const Header = () => {
                   Home
                 </NavLink>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <NavLink to="/category" className="nav-link ">
                   Category
                 </NavLink>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <NavLink to="/register" className="nav-link">
                   Register
@@ -43,11 +43,11 @@ const Header = () => {
                   Login
                 </NavLink>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <NavLink to="/cart" className="nav-link">
                   Cart (0)
                 </NavLink>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
