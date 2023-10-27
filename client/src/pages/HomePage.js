@@ -1,11 +1,15 @@
 import React from "react";
 import Layout from "./../components/Layout/Layout";
+import HeroSection from './HeroSection';
+
 
 const HomePage = () => {
   return (
     <Layout>
-      <h1>Welcome to the store !!!</h1>
+      
+      <HeroSection />
     </Layout>
+
   );
 };
 
