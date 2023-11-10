@@ -19,7 +19,7 @@ import Cart from './components/Cart';
 import MainPage from './pages/MainPage';
 import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import AOS from "aos";
+// import AOS from "aos";
 
 function App() {
   useEffect(() => {
