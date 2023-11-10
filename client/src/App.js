@@ -19,7 +19,8 @@ import Cart from './components/Cart';
 import MainPage from './pages/MainPage';
 import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-// import AOS from "aos";
+import AOS from "aos";
+import Shop from "./pages/Shop";
 
 function App() {
   useEffect(() => {
@@ -37,8 +38,8 @@ function App() {
         <Route path="/contact" element={<Contacts />} />
         <Route path="/policy" element={<Policy />} />
         <Route path="/home" element={<Book />} />
-        <Route path="/homepage" element={<Popular />} />
-        <Route path="/homepage/product/:id" element={<ProductDetails />} />
+        // <Route path="/homepage" element={<Popular />} />
+        // <Route path="/homepage/product/:id" element={<ProductDetails />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/item" element={<Shop />} />
         <Route path="/book" element={<BookList />} />
