@@ -12,8 +12,6 @@ const MainPage = () => {
         <Home_header/>
         <Navbar/>
         <FeaturedProducts/>
-        // <Shop/>
-        // <UserIcon/>
     </div>
   )
 }
