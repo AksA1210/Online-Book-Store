@@ -38,7 +38,7 @@ const Login = () => {
      
         if(credentials.email == "aksaaa@gmail.com" && credentials.password == "12345"){
             console.log("Login Successful !!!")
-            navigate('/book');
+            navigate('/main');
         }else{console.log("Login Failed");
 
         }
