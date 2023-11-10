@@ -15,10 +15,16 @@ import BookList from "./pages/Users/index";
 // import Cart from "./components/Products/Cart/Cart";
 // import Checkout from "./components/CheckoutForm/Checkout/Checkout";
 // import ProductView from "./components/Products/ProductView/ProductView";
+import MainPage from './pages/MainPage';
 import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+
+  }, [])
   return (
     <>
       <Routes>
@@ -26,10 +32,15 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact" element={<Contacts />} />
         <Route path="/policy" element={<Policy />} />
         <Route path="/home" element={<Book />} />
+        <Route path="/homepage" element={<Popular />} />
+        <Route path="/homepage/product/:id" element={<ProductDetails />} />
+        // <Route path="/cart" element={<Cart />} />
+        // <Route path="/item" element={<Shop />} />
         <Route path="/book" element={<BookList />} />
+        <Route path="/main" element={<MainPage />} />
         <Route path="*" element={<Pagenotfound />} />
         {/* <Route path="/home" element={< Products />} />
         <Route path="/products-view" element={< ProductView />} />
