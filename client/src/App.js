@@ -11,11 +11,6 @@ import Book from "./pages/Users/Book";
 import { books } from './pages/Users/data/books';
 import BookList from "./pages/Users/index";
 import Cart from './components/Cart';
-// import Products from "./components/Products/Products/Products";
-// import Navbar from "./components/Products/Navbar/Navbar";
-// import Cart from "./components/Products/Cart/Cart";
-// import Checkout from "./components/CheckoutForm/Checkout/Checkout";
-// import ProductView from "./components/Products/ProductView/ProductView";
 import MainPage from './pages/MainPage';
 import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -38,8 +33,6 @@ function App() {
         <Route path="/contact" element={<Contacts />} />
         <Route path="/policy" element={<Policy />} />
         <Route path="/home" element={<Book />} />
-        // <Route path="/homepage" element={<Popular />} />
-        // <Route path="/homepage/product/:id" element={<ProductDetails />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/item" element={<Shop />} />
         <Route path="/book" element={<BookList />} />
