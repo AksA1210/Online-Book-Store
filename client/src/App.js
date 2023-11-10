@@ -10,6 +10,7 @@ import Login from "./pages/Auth/Login";
 import Book from "./pages/Users/Book";
 import { books } from './pages/Users/data/books';
 import BookList from "./pages/Users/index";
+import Cart from './components/Cart';
 // import Products from "./components/Products/Products/Products";
 // import Navbar from "./components/Products/Navbar/Navbar";
 // import Cart from "./components/Products/Cart/Cart";
@@ -18,6 +19,7 @@ import BookList from "./pages/Users/index";
 import MainPage from './pages/MainPage';
 import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import AOS from "aos";
 
 function App() {
   useEffect(() => {
@@ -37,8 +39,8 @@ function App() {
         <Route path="/home" element={<Book />} />
         <Route path="/homepage" element={<Popular />} />
         <Route path="/homepage/product/:id" element={<ProductDetails />} />
-        // <Route path="/cart" element={<Cart />} />
-        // <Route path="/item" element={<Shop />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/item" element={<Shop />} />
         <Route path="/book" element={<BookList />} />
         <Route path="/main" element={<MainPage />} />
         <Route path="*" element={<Pagenotfound />} />
